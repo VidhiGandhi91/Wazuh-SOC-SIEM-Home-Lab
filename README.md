@@ -35,7 +35,7 @@ The initial lab uses an isolated **VirtualBox NAT Network**.
 
 ### Architecture
 
-
+```text
                     Isolated VirtualBox NAT Network
                          10.0.3.0/24
                               │
@@ -74,7 +74,7 @@ The initial lab uses an isolated **VirtualBox NAT Network**.
 
 An isolated NAT Network was created using:
 
-```
+```text
 10.0.3.0/24
 ```
 
@@ -95,14 +95,14 @@ Resources:
 
 Wazuh was installed using the following commands:
 
-```
+```bash
 curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh
 sudo bash wazuh-install.sh -a
 ```
 
 The Wazuh dashboard was then accessed through:
 
-```
+```text
 https://10.0.3.4
 ```
 
@@ -114,7 +114,7 @@ A Bitnami WordPress virtual machine was configured on the same isolated network.
 
 IP address:
 
-```
+```text
 10.0.3.5
 ```
 
@@ -130,13 +130,13 @@ The system was used as:
 
 The Wazuh agent was installed on the Bitnami endpoint and configured to communicate with the Wazuh Manager.
 
-```
+```bash
 sudo WAZUH_MANAGER='10.0.3.4' WAZUH_AGENT_NAME='S20240099' dpkg -i wazuh-agent.deb
 ```
 
 The agent was registered using:
 
-```
+```bash
 sudo /var/ossec/bin/agent-auth -m 10.0.3.4 -A S20240099
 ```
 
@@ -387,7 +387,7 @@ This project demonstrates practical experience with:
 
 All security testing in this repository is performed within an isolated, controlled virtual laboratory environment for educational and defensive cybersecurity purposes.
 
-No testing is intended against systems or applications without authorisation.
+No testing is intended against systems or applications without authorization.
 
 ---
 
