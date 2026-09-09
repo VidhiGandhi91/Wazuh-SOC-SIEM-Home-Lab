@@ -46,7 +46,7 @@ The initial lab uses an isolated **VirtualBox NAT Network**.
    Wazuh Manager                           Wazuh Agent
      10.0.3.4                               10.0.3.5
              │                                 │
-             │◄──── Security Events ──────────│
+             │ ◄──── Security Events ──────────│
              │                                 │
              ▼                                 ▼
       Wazuh Dashboard                    WordPress
