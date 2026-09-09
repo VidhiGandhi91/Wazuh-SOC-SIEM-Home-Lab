@@ -303,27 +303,6 @@ This setup provided the foundation for the subsequent detection and security-tes
 
 ---
 
-## Evidence Mapping
-
-The following mapping is maintained internally to preserve traceability between the original lab evidence and the professional GitHub documentation.
-
-| Original Evidence         | GitHub Documentation   |
-| ------------------------- | ---------------------- |
-| NAT Network configuration | VirtualBox NAT Network |
-| Ubuntu network settings   | Ubuntu VM              |
-| Ubuntu IP address         | Ubuntu VM              |
-| Bitnami network settings  | WordPress Endpoint     |
-| Bitnami IP address        | WordPress Endpoint     |
-| Wazuh installation        | Wazuh Installation     |
-| Wazuh credentials         | Excluded/redacted      |
-| Wazuh login page          | Wazuh Dashboard        |
-| Wazuh Dashboard           | Wazuh Dashboard        |
-| Agent installation        | Wazuh Agent            |
-| Agent status — ACTIVE     | Agent Verification     |
-| Active agent in Dashboard | Agent Verification     |
-
----
-
 ## Related Documentation
 
 * [Project Overview](../README.md)
