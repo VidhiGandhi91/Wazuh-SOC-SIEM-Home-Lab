@@ -160,7 +160,7 @@ The installation completed successfully, providing the monitoring infrastructure
 
 **Wazuh installation completion**
 
-![Wazuh installation completion](../screenshots/06-wazuh-installation-complete.png)
+![Wazuh installation completion](../screenshots/06-wazuh-installation.png)
 
 ---
 
