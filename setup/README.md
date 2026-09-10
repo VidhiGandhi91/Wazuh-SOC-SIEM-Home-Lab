@@ -74,7 +74,7 @@ The Ubuntu VM was connected to the previously configured NAT Network.
 
 **Ubuntu VM network configuration**
 
-![Ubuntu VM network configuration](../screenshots/02-ubuntu/02-ubuntu-network-settings.png)
+![Ubuntu VM network configuration](../screenshots/02-ubuntu-network-settings.png)
 
 ### IP Address Verification
 
@@ -92,7 +92,7 @@ The configured lab address was:
 
 **Ubuntu VM IP address**
 
-![Ubuntu VM IP address](../screenshots/02-ubuntu/03-ubuntu-ip-address.png)
+![Ubuntu VM IP address](../screenshots/03-ubuntu-ip-address.png)
 
 ---
 
@@ -106,7 +106,7 @@ The VM was connected to the same VirtualBox NAT Network as the Ubuntu Wazuh serv
 
 **Bitnami WordPress VM network configuration**
 
-![Bitnami WordPress VM network configuration](../screenshots/03-wordpress/04-wordpress-network-settings.png)
+![Bitnami WordPress VM network configuration](../screenshots/04-wordpress-network-settings.png)
 
 ### IP Address Verification
 
@@ -124,7 +124,7 @@ The configured lab address was:
 
 **Bitnami WordPress VM IP address**
 
-![Bitnami WordPress VM IP address](../screenshots/03-wordpress/05-wordpress-ip-address.png)
+![Bitnami WordPress VM IP address](../screenshots/05-wordpress-ip-address.png)
 
 The Bitnami VM was subsequently used for:
 
@@ -160,7 +160,7 @@ The installation completed successfully, providing the monitoring infrastructure
 
 **Wazuh installation completion**
 
-![Wazuh installation completion](../screenshots/04-wazuh/06-wazuh-installation-complete.png)
+![Wazuh installation completion](../screenshots/06-wazuh-installation-complete.png)
 
 ---
 
@@ -180,11 +180,11 @@ The Wazuh Dashboard was successfully accessed from the Ubuntu Wazuh server.
 
 **Dashboard login:**
 
-![Wazuh Dashboard Login](../screenshots/04-wazuh/08-wazuh-login.png)
+![Wazuh Dashboard Login](../screenshots/08-wazuh-login.png)
 
 **Wazuh Dashboard:**
 
-![Wazuh Dashboard](../screenshots/04-wazuh/09-wazuh-dashboard.png)
+![Wazuh Dashboard](../screenshots/09-wazuh-dashboard.png)
 
 Authentication credentials and other sensitive information are not included in the public repository.
 
@@ -210,7 +210,7 @@ The installation completed successfully and prepared the Bitnami endpoint for re
 
 **Wazuh Agent installation**
 
-![Wazuh Agent installation](../screenshots/05-agent/10-agent-installation.png)
+![Wazuh Agent installation](../screenshots/10-agent-installation.png)
 
 ---
 
@@ -247,13 +247,13 @@ This confirmed that:
 
 **Agent registration verification**
 
-![Wazuh Agent status showing ACTIVE](../screenshots/05-agent/11-agent-control-active.png)
+![Wazuh Agent status showing ACTIVE](../screenshots/11-agent-control-active.png)
 
 The same agent was also visible through the Wazuh Dashboard.
 
 **Active agent in Wazuh Dashboard**
 
-![Active Wazuh Agent in Dashboard](../screenshots/05-agent/12-active-agent-dashboard.png)
+![Active Wazuh Agent in Dashboard](../screenshots/12-active-agent-dashboard.png)
 
 ---
 
