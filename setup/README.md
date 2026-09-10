@@ -50,7 +50,7 @@ The network provides communication between the Wazuh server and the monitored Wo
 
 **VirtualBox NAT Network configuration**
 
-![VirtualBox NAT Network configuration](../screenshots/01-network/01-nat-network.png)
+![VirtualBox NAT Network configuration](../screenshots/01-nat-network.png)
 
 ---
 
