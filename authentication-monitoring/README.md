@@ -42,7 +42,7 @@ These events confirm that Wazuh is actively monitoring system-level authenticati
 
 Wazuh mapped the repeated authentication failures to the **Password Guessing** technique under the **Credential Access** tactic.
 
-![MITRE Password Guessing](../15-screenshots/mitre-password-guessing.png)
+![MITRE Password Guessing](../screenshots/15-mitre-password-guessing.png)
 
 This classification demonstrates Wazuh’s ability to correlate raw log events with standardised adversary techniques.
 
