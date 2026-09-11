@@ -32,7 +32,7 @@ The Threat Hunting dashboard displayed multiple events originating from the Bitn
 - `login failed`
 - repeated invalid credential attempts
 
-![Authentication Failures in Wazuh](../screenshots/auth-failures-threat-hunting.png)
+![Authentication alerts in Wazuh](../screenshots/14-authentication-alerts.png)
 
 These events confirm that Wazuh is actively monitoring system-level authentication activity.
 
@@ -42,7 +42,7 @@ These events confirm that Wazuh is actively monitoring system-level authenticati
 
 Wazuh mapped the repeated authentication failures to the **Password Guessing** technique under the **Credential Access** tactic.
 
-![MITRE Password Guessing](../screenshots/mitre-password-guessing.png)
+![MITRE Password Guessing](../15-screenshots/mitre-password-guessing.png)
 
 This classification demonstrates Wazuh’s ability to correlate raw log events with standardised adversary techniques.
 
