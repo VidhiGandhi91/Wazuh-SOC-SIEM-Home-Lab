@@ -17,7 +17,7 @@ These failures were captured by Wazuh and surfaced as authentication-related sec
 
 Multiple incorrect username/password combinations were entered at the Bitnami VM login prompt to simulate unauthorised access attempts.
 
-![Failed Login Attempts](../screenshots/failed-login-attempts.png)
+![Failed Login Attempts](../screenshots/13-failed-login-attempts.png)
 
 These repeated failures create a clear pattern of suspicious authentication activity that a SIEM should detect.
 
