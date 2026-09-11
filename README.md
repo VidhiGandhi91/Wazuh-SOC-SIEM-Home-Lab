@@ -1,86 +1,70 @@
 # Wazuh SOC/SIEM Home Lab
 
-A practical SOC/SIEM home lab built using **Wazuh**, **Ubuntu**, and a **Bitnami WordPress VM**.  
-This project demonstrates real-world security monitoring, attack simulation, detection engineering, and MITRE ATT&CK mapping inside an isolated virtual environment.
+A hands-on Security Operations Center (SOC) / Security Information and Event Management (SIEM) home lab built using **Wazuh, VirtualBox, Ubuntu, and WordPress**.
 
----
+The project demonstrates endpoint monitoring, security event detection, vulnerability monitoring, attack simulation, alert investigation, and security analysis in an isolated lab environment.
 
-## 🔧 Lab Architecture
-- VirtualBox NAT Network (10.0.3.0/24)  
-- **Wazuh Manager** (Ubuntu)  
-- **Wazuh Agent** (Bitnami WordPress VM)  
-- Isolated SOC environment for safe attack simulation
+## Lab Architecture
 
-📁 Folder: [`/architecture`](architecture)
+```text
+VirtualBox NAT Network
+        │
+        ├── Ubuntu
+        │   └── Wazuh Manager + Dashboard
+        │       10.0.3.4
+        │
+        └── Bitnami WordPress
+            └── Wazuh Agent
+                10.0.3.5
+```
 
----
+## Objectives
 
-## 📦 Setup & Deployment
-- Wazuh Manager installation  
-- Agent deployment on WordPress VM  
-- Secure manager–agent communication  
-- Dashboard access and initial configuration
+* Deploy and configure Wazuh SIEM
+* Monitor a Linux-based endpoint
+* Detect authentication failures and password-guessing activity
+* Perform controlled WordPress security testing
+* Identify vulnerability findings
+* Investigate Wazuh security alerts
+* Map detected activity to MITRE ATT&CK
+* Document detection gaps and improvement opportunities
+* Develop a basic SOC investigation and incident-response workflow
 
-📁 Folder: [`/setup`](setup)
+## Key Findings
 
----
+The lab demonstrated successful detection of **system-level authentication activity** through Wazuh.
 
-## 🛡️ Security Monitoring (Completed Stages)
-- System authentication monitoring  
-- Password guessing detection  
-- WPScan brute-force simulation  
-- Vulnerability assessment (CVE findings)  
-- MITRE ATT&CK mapping for detected events
+A controlled WordPress password-guessing test also highlighted an important **application-layer detection gap**: WordPress login activity was not automatically visible through the default Wazuh configuration.
 
-📁 Future folders (to be added):
-- [`/authentication-monitoring`](authentication-monitoring)
-- [`/password-guessing`](password-guessing)
-- [`/wpscan`](wpscan)
-- [`/vulnerability-assessment`](vulnerability-assessment)
-- [`/mitre-mapping`](mitre-mapping)
+This led to further investigation into log integration and custom detection rules.
 
----
+## Project Structure
 
-## 🚀 Upcoming Enhancements (SOC-Level Stages)
-This lab will be extended with full SOC workflows:
+| Folder                            | Description                          |
+| --------------------------------- | ------------------------------------ |
+| [`architecture`](./architecture/) | Lab architecture and security design |
+| [`setup`](./setup/)               | VirtualBox, Wazuh, and agent setup   |
+| [`screenshots`](./screenshots/)   | Lab implementation evidence          |
 
-1. Application/Web log integration (Apache + WordPress)  
-2. Custom Wazuh detection rules  
-3. Multiple attack simulations  
-4. Alert investigation workflows  
-5. MITRE ATT&CK deep analysis  
-6. Incident response simulation  
-7. Detection tuning & improvement  
-8. SOC dashboards & reporting
+Additional documentation will cover detection engineering, vulnerability management, investigation, MITRE ATT&CK, and incident response.
 
-📁 Future folders (to be added):
-- [`/stage8-application-logs`](stage8-application-logs)
-- [`/stage9-custom-rules`](stage9-custom-rules)
-- [`/stage10-attack-library`](stage10-attack-library)
-- [`/stage11-alert-investigation`](stage11-alert-investigation)
-- [`/stage12-mitre-investigation`](stage12-mitre-investigation)
-- [`/stage13-incident-response`](stage13-incident-response)
-- [`/stage14-detection-improvement`](stage14-detection-improvement)
-- [`/stage15-soc-dashboard`](stage15-soc-dashboard)
+## Technologies
 
----
+* **Wazuh**
+* **VirtualBox**
+* **Ubuntu Linux**
+* **Bitnami WordPress**
+* **WPScan**
+* **MITRE ATT&CK**
 
-## 🎯 Project Goal
-To build a complete SOC home lab demonstrating:
+## Project Status
 
-- SIEM deployment  
-- Log ingestion  
-- Threat detection  
-- Attack simulation  
-- Detection engineering  
-- MITRE mapping  
-- Incident response  
-- SOC reporting
+**In Progress**
 
-This repository serves as a practical cybersecurity portfolio showcasing real SIEM and SOC skills.
+The lab is being expanded with additional detection engineering, investigation, and incident-response scenarios.
 
----
+## Author
 
-## 📌 Status
-**Stages 1–7 completed**  
-**Stages 8–15 in progress**
+**Vidhi Gandhi**
+
+Master of Information Technology (Cybersecurity)
